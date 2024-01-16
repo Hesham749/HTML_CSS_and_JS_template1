@@ -182,7 +182,7 @@ a {
     left: 0;
     padding: 30px;
     background-color: white;
-    background-color: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
     z-index: -1;
     display: flex;
     gap: 40px;
@@ -217,11 +217,11 @@ a {
 }
 
 .header .mega-menu .links li:not(:last-child) {
-    background-color: 1px solid #e9e6e6;
+    border-bottom: 1px solid #e9e6e6;
 }
 @media (max-width: 767px) {
     .header .mega-menu :first-of-type li:last-child {
-        background-color: 1px solid #e9e6e6;
+        border-bottom: 1px solid #e9e6e6;
     }
 }
 .header .mega-menu .links li::before {
