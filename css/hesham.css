@@ -562,7 +562,7 @@ a {
     border-color: #f44036;
     color: #f44036;
     background: linear-gradient(to right, #f44036 50%, white 50%);
-    background-size: 200% 100%;
+    background-size: 200% 1%;
     background-position: right bottom;
 }
 .features .quality:hover a {
@@ -572,7 +572,7 @@ a {
     border-color: #009688;
     color: #009688;
     background: linear-gradient(to right, #009688 50%, white 50%);
-    background-size: 200% 100%;
+    background-size: 200% 1%;
     background-position: right bottom;
 }
 .features .time:hover a {
@@ -582,7 +582,7 @@ a {
     border-color: #00a8f4;
     color: #00a8f4;
     background: linear-gradient(to right, #00a8f4 50%, white 50%);
-    background-size: 200% 100%;
+    background-size: 200% 1%;
     background-position: right bottom;
 }
 .features .passion:hover a {
