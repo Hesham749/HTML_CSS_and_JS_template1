@@ -394,18 +394,19 @@ a {
 .articles .box:hover .info i {
     animation: arrow-right 0.6s linear infinite;
 }
-.spikes{
-position: relative;
+.spikes {
+    position: relative;
 }
-    .spikes::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        width: 100%;
-        height: 30px;
-        z-index: 1;
-        background-image: linear-gradient(135deg, white 25%, transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
-        background-size: 30px 30px;
+.spikes::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(135deg, white 25%, transparent 25%),
+        linear-gradient(225deg, white 25%, transparent 25%);
+    background-size: 30px 30px;
 }
 
 /* end articles */
@@ -460,13 +461,13 @@ position: relative;
 /* End gallery */
 
 /* Start features */
-.features{
+.features {
     padding: var(--section-padding);
     position: relative;
 }
-.features .container{
+.features .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
 }
 .features .container .box {
@@ -477,70 +478,72 @@ position: relative;
     position: relative;
     overflow: hidden;
 }
-.features .container .box .image-holder::before{
-    content: '';
+.features .container .box .image-holder::before {
+    content: "";
     position: absolute;
     top: -3px;
     left: 0;
     height: 100%;
     width: 100%;
 }
-.features .quality .image-holder::before{
-    background-color:rgb(244 64 54 / 60%); }
-.features .time .image-holder::before{
-
-    background-color:rgb(0 150 136 / 60%); ;
+.features .quality .image-holder::before {
+    background-color: rgb(244 64 54 / 60%);
 }
-.features .passion .image-holder::before{
-
-    background-color:rgb(3 169 244 / 60%) ;
+.features .time .image-holder::before {
+    background-color: rgb(0 150 136 / 60%);
 }
-.features .container .box .image-holder::after{
-content: '';
-position: absolute;
-bottom: 0;
-right: 0;
-border-style: solid;
-border-width: 0px 0px 170px 500px;
-border-color: transparent transparent white transparent;
-transition: var(--main-transition);
+.features .passion .image-holder::before {
+    background-color: rgb(3 169 244 / 60%);
 }
-.features .box:hover .image-holder::after{
+.features .container .box .image-holder::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0px 0px 170px 500px;
+    border-color: transparent transparent white transparent;
+    transition: var(--main-transition);
+}
+.features .box:hover .image-holder::after {
     border-width: 0px 500px 170px 0px;
 }
-.features .container .image-holder img{max-width: 100%;}
-.features .container h2{
+.features .container .image-holder img {
+    max-width: 100%;
+}
+.features .container h2 {
     font-size: 40px;
     width: fit-content;
     margin: auto;
     padding-bottom: 20px;
     position: relative;
 }
-.features .container h2::after{
-    content: '';
+.features .container h2::after {
+    content: "";
     position: absolute;
     top: 100%;
-    left:15% ;
+    left: 15%;
     width: 70%;
     height: 5px;
 }
-.features .container .quality h2::after{
-    background-color: #f44036 ;
+.features .container .quality h2::after {
+    background-color: #f44036;
 }
-.features .container .time h2::after{
+.features .container .time h2::after {
     background-color: #009688;
 }
-.features .container .passion h2::after{
+.features .container .passion h2::after {
     background-color: #00a8f4;
 }
-.features .container p{padding: 20px;
+.features .container p {
+    padding: 20px;
     color: #777;
     line-height: 2;
     font-size: 20px;
     margin: 30px 0;
     padding: 25px;
 }
-.features  .container a{
+.features .box a {
     padding: 10px 30px;
     border-radius: 6px;
     font-size: 22px;
@@ -551,41 +554,38 @@ transition: var(--main-transition);
     font-weight: bold;
     transition: var(--main-transition);
 }
-.features .box:hover a{
+.features .box:hover a {
     color: white;
-
 }
 
-.features .quality a{
-    border-color: #f44036  ;
-    color: #f44036 ;
-    background: linear-gradient(to right , #f44036 50% , white 50%);
+.features .quality a {
+    border-color: #f44036;
+    color: #f44036;
+    background: linear-gradient(to right, #f44036 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
 }
-.features .quality:hover a{
+.features .quality:hover a {
     background-position: left bottom;
 }
-.features .time a{
-    border-color: #009688  ;
-    color: #009688 ;
+.features .time a {
+    border-color: #009688;
+    color: #009688;
     background: linear-gradient(to right, #009688 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-
 }
-.features .time:hover a{
+.features .time:hover a {
     background-position: left bottom;
 }
-.features .passion a{
-    border-color: #00a8f4  ;
-    color: #00a8f4 ;
-    background: linear-gradient(to right ,#00a8f4  50% , white 50%);
+.features .passion a {
+    border-color: #00a8f4;
+    color: #00a8f4;
+    background: linear-gradient(to right, #00a8f4 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    
 }
-.features .passion:hover a{
+.features .passion:hover a {
     background-position: left bottom;
 }
 /* End features */
