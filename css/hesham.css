@@ -590,6 +590,51 @@ a {
     background-position: left bottom;
 }
 /* End features */
+/* start testimonials */
+.testimonials{
+    padding: var(--section-padding);
+    position: relative;background-color: var(--sction-color);
+}
+.testimonials .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 40px;
+
+}
+.testimonials .container .box{
+    padding: 20px;background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    position: relative;
+}
+.testimonials .container .box img{
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--sction-color);
+}
+.testimonials .container .box h3{
+    margin: 0 0 10px;
+    color: var(--primary-color);
+}
+.testimonials .container .box span{
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+.testimonials .container .box p{
+    line-height: 1.5;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.testimonials .container .box .filled{
+    color: #ffc107;
+}
+/* end testimonials */
 
 /* start animation */
 @keyframes up-down {
