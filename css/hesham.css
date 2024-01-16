@@ -585,6 +585,7 @@ a {
     background-size: 200% 1%;
     background-position: right bottom;
 }
+
 .features .passion:hover a {
     background-position: left bottom;
 }
