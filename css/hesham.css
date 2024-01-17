@@ -6,6 +6,7 @@
     --main-transition: 0.3s;
     --section-padding: 100px 0;
     --sction-color: #ececec;
+    --box-shadow:0 12px 20px 0 rgb(0 0 0 /13%) , 0 2px 4px 0 rgb(0 0 0 /12%)
 }
 
 /* end variables */
@@ -17,9 +18,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 body {
     font-family: "Cairo", sans-serif;
 }
@@ -963,7 +964,7 @@ left: 0;
     max-width: 450px;
 }
 @media (max-width:991px) {
-    .container img{
+    .events .container img{
         display: none;
     }
 }
@@ -1076,6 +1077,132 @@ justify-content: center;
     background-color: var(--secondary-color);
 }
 /* end events */
+
+/* start pricing */
+.pricing{
+    padding: var(--section-padding);
+    background-color: var(--sction-color);
+    position: relative;
+}
+.pricing .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 30px;
+}
+.pricing .container .box{
+    background-color: white;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    transition: var(--main-transition);
+    text-align: center;
+    z-index: 1;
+}
+.pricing .container .box::before , .pricing .container .box::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 50%;
+    background-color: #f6f6f6;
+    z-index: -1;
+    transition: var(--main-transition);
+}
+.pricing .container .box::before{
+    top: 0;
+    right: 0;
+}
+.pricing .container .box::after{
+    left: 0;
+    bottom: 0;
+}
+.pricing .container .box:hover::before,.pricing .container .box:hover::after {
+    width: 100%;
+}
+@media (min-width:1200px) {
+    .pricing .box.popular {
+        top: -20px;
+    }
+}
+.pricing .box.popular .label {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    writing-mode: vertical-lr;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px 35px 10px;
+    font-size: 18px;
+    width: 40px;
+}
+.pricing .box.popular:hover .label::before{
+    border-color: transparent transparent #f6f6f6 transparent;
+}
+.pricing .box.popular .label::before{
+    content: '';
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-color: transparent transparent white transparent;
+    border-width:20px ;
+    transition: .1s;
+}
+.pricing  .box .title{
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: -1px;
+    
+}
+.pricing  .box img{width:80px ;
+    margin-bottom: 40px;
+}
+
+.pricing  .box .price{
+    margin-bottom: 20px;
+}
+.pricing  .box .amount{
+    display: block;
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.pricing  .box .time{
+    color: #777;
+}
+.pricing  .box ul{
+    text-align: left;
+}
+.pricing  .box li{
+    position: relative;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+.pricing  .box li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    margin-right: 10px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+.pricing  .box a{
+    display: block;
+    width: fit-content;
+    margin: 30px auto 40px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: var(--main-transition);
+}
+.pricing  .box a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+/* end pricing */
 
 /* start animation */
 @keyframes up-down {
