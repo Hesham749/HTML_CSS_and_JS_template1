@@ -1355,7 +1355,32 @@ a {
 }
 
 /* end footer */
+.to-top{
+    position: fixed;
+    display: none;
+    bottom: 30px;
+    right: 15px;
+    background-color: white;
+    border:3px solid var(--primary-color);
+    z-index: 999;
+    width: 45px;
+    height: 40px;
+    color: var(--primary-color);
+    font-size: 30px ;
+    font-weight: bold;
+    padding: 3px;
+    padding-bottom: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: var(--main-transition);
 
+}
+.to-top:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
 /* start animation */
 @keyframes up-down {
     0%,
