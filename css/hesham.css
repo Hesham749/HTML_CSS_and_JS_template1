@@ -815,6 +815,52 @@ a {
 }
 /* end services */
 
+/* start skills */
+.our-skills{
+    padding: var(--section-padding);
+    position: relative;
+}
+.our-skills .container{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .our-skills img{
+        display: none;
+    }
+}
+.our-skills .skills{
+    flex: 1;
+}
+.our-skills .skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-skills .skill h3  span{
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--primary-color);
+}
+.our-skills .skill .progress{
+    height: 30px;
+    background-color: #eee;
+    position: relative;
+}
+.our-skills .skill .progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+
+
+/* end skills */
+
 /* start animation */
 @keyframes up-down {
     0%,
