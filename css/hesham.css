@@ -1327,6 +1327,7 @@ a {
 }
 .footer .box .line .info a {
     display: block;
+    width: fit-content;
     color: #b9b9b9;
 }
 @media (max-width:991px) {
