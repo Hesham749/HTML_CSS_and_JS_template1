@@ -5,7 +5,7 @@
     --border-color: #e9e6e6;
     --main-transition: 0.3s;
     --section-padding: 100px 0;
-    --sction-color: #ececec;
+    --section-color: #ececec;
     --box-shadow: 0 12px 20px 0 rgb(0 0 0 /13%), 0 2px 4px 0 rgb(0 0 0 /12%);
 }
 
@@ -253,7 +253,7 @@ a {
 
 /* End header */
 
-/* satrt landing */
+/* start landing */
 .landing {
     position: relative;
 }
@@ -412,11 +412,11 @@ a {
 
 /* end articles */
 
-/* strat gallery */
+/* start gallery */
 .gallery {
     padding: var(--section-padding);
     position: relative;
-    background-color: var(--sction-color);
+    background-color: var(--section-color);
 }
 .gallery .container {
     display: grid;
@@ -595,7 +595,7 @@ a {
 .testimonials {
     padding: var(--section-padding);
     position: relative;
-    background-color: var(--sction-color);
+    background-color: var(--section-color);
 }
 .testimonials .container {
     display: grid;
@@ -616,7 +616,7 @@ a {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 10px solid var(--sction-color);
+    border: 10px solid var(--section-color);
 }
 .testimonials .container .box h3 {
     margin: 0 0 10px;
@@ -731,7 +731,7 @@ a {
 /* start services */
 .services {
     padding: var(--section-padding);
-    background-color: var(--sction-color);
+    background-color: var(--section-color);
     position: relative;
 }
 .services .container {
@@ -806,7 +806,7 @@ a {
     top: 0;
     left: 80px;
     background-color: #d5d5d5;
-    transform: skewx(-30deg);
+    transform:skewX(-30deg) ;
 }
 .services .container .info a {
     color: var(--primary-color);
@@ -860,7 +860,7 @@ a {
 /* start work */
 .work-steps {
     padding: var(--section-padding);
-    background-color: var(--sction-color);
+    background-color: var(--section-color);
     position: relative;
 }
 .work-steps .container {
@@ -1078,7 +1078,7 @@ a {
 /* start pricing */
 .pricing {
     padding: var(--section-padding);
-    background-color: var(--sction-color);
+    background-color: var(--section-color);
     position: relative;
 }
 .pricing .dots {
@@ -1218,7 +1218,7 @@ a {
     color: white;
 }
 /* end pricing */
-/* strat footer */
+/* start footer */
 .footer {
     color: #b9b9b9;
     background-color: #191919;
