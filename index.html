@@ -871,7 +871,7 @@
                 } else {
                     $(".to-top").fadeOut("slow", function () {
                         // body
-                        document.querySelector(".to-top").style.cssText = `
+                        this.style.cssText = `
                 background-color: white ;
                 color: var(--primary-color);
                 border-color: var(--secondary-color);
@@ -881,7 +881,7 @@
             };
             $(".to-top").click(function () {
                 window.scrollTo({ top: 0, behavior: "smooth" });
-                document.querySelector(".to-top").style.cssText = `
+                this.style.cssText = `
                 background-color: var(--primary-color);
                 color: white;
                 border-color: var(--secondary-color);
