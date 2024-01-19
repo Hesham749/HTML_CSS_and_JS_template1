@@ -1219,38 +1219,38 @@ a {
 }
 /* end pricing */
 /* strat footer */
-.footer{
+.footer {
     color: #b9b9b9;
     background-color: #191919;
     padding: 70px 0 0;
 }
-@media (max-width:767px) {
-    .footer{
+@media (max-width: 767px) {
+    .footer {
         text-align: center;
     }
 }
-.footer .container{
+.footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;
 }
-.footer  .box h3 {
+.footer .box h3 {
     color: white;
     font-size: 50px;
     margin: 0 0 20px;
 }
-.footer  .box .social {
+.footer .box .social {
     display: flex;
 }
-@media (max-width:767px) {
-    .footer  .box .social{
+@media (max-width: 767px) {
+    .footer .box .social {
         justify-content: center;
     }
 }
-.footer  .box .social li {
+.footer .box .social li {
     margin-right: 10px;
 }
-.footer  .box .social li a {
+.footer .box .social li a {
     background-color: #313131;
     color: #b9b9b9;
     display: inline-flex;
@@ -1261,18 +1261,17 @@ a {
     font-size: 20px;
     transition: var(--main-transition);
 }
-.footer  .box .social li .facebook:hover{
+.footer .box .social li .facebook:hover {
     background-color: #1977f2;
 }
-.footer  .box .social li .twitter:hover{
+.footer .box .social li .twitter:hover {
     background-color: #1da1f2;
 }
-.footer  .box .social li .youtube:hover{
-    background-color:#ff0000;
+.footer .box .social li .youtube:hover {
+    background-color: #ff0000;
 }
-.footer  .box .text {
+.footer .box .text {
     line-height: 2;
-
 }
 
 .footer .box .links li {
@@ -1283,30 +1282,31 @@ a {
 .footer .box .links li:not(:last-child) {
     border-bottom: 1px solid #444;
 }
-.footer .box .links li:hover{padding-left:10px ;}
-.footer .box .links li:hover a{
+.footer .box .links li:hover {
+    padding-left: 10px;
+}
+.footer .box .links li:hover a {
     color: white;
 }
-.footer .box .links li a{
+.footer .box .links li a {
     color: #b9b9b9;
     transition: var(--main-transition);
 }
-.footer .box .links li a::before{
-    font-family: 'font awesome 5 free';
-    content: '\f101';
+.footer .box .links li a::before {
+    font-family: "font awesome 5 free";
+    content: "\f101";
     font-weight: 900;
     color: var(--primary-color);
     margin-right: 10px;
 }
-.footer .box .line{
+.footer .box .line {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
-@media (max-width:767px) {
-    .footer .box .line{
+@media (max-width: 767px) {
+    .footer .box .line {
         flex-direction: column;
-        
     }
 }
 
@@ -1315,7 +1315,7 @@ a {
     color: var(--primary-color);
     margin-right: 10px;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer .box .line i {
         margin-right: 0;
         margin-bottom: 10px;
@@ -1330,12 +1330,12 @@ a {
     width: fit-content;
     color: #b9b9b9;
 }
-@media (max-width:991px) {
-    .footer .box.footer-gallery{
+@media (max-width: 991px) {
+    .footer .box.footer-gallery {
         width: 260px;
         height: 180px;
-        margin-left:auto ;
-        margin-right:auto ;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1349,25 +1349,25 @@ a {
 }
 .footer .copyright {
     text-align: center;
-    padding: 25px 0 ;
+    padding: 25px 0;
     color: white;
     margin: 50px 0 0;
     border-top: 1px solid #444;
 }
 
 /* end footer */
-.to-top{
+.to-top {
     position: fixed;
     display: none;
     bottom: 30px;
     right: 15px;
     background-color: white;
-    border:3px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     z-index: 999;
     width: 45px;
     height: 40px;
     color: var(--primary-color);
-    font-size: 30px ;
+    font-size: 30px;
     font-weight: bold;
     padding: 3px;
     padding-bottom: 0;
@@ -1375,9 +1375,8 @@ a {
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     transition: var(--main-transition);
-
 }
-.to-top:hover{
+.to-top:hover {
     background-color: var(--primary-color);
     color: white;
     border-color: var(--secondary-color);
