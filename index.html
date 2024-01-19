@@ -862,8 +862,19 @@
         </div>
         <!-- end footer -->
         <button class="to-top">^</button>
-
         <!-- script -->
+        <script>
+            onscroll = function () {
+                if (scrollY >= 750) {
+                    $(".to-top").fadeIn(300);
+                } else {
+                    $(".to-top").fadeOut(300);
+                }
+            };
+            $(".to-top").click(function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        </script>
         <script src="js/main.js"></script>
     </body>
 </html>
